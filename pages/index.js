@@ -24,7 +24,7 @@ export default function Home() {
       {user && <pre>{JSON.stringify(user, null, 2)}</pre>}
       <main className={styles.main}>
       
-         <button onClick={handlerSession}>{user? 'Logout' : 'Sign in with google'}</button>
+         <button className={' text-sx bg-sky-500'}onClick={handlerSession}>{user? 'Logout' : 'Sign in with google'}</button>
       </main>
 
       <footer className={styles.footer}>
